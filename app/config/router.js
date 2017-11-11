@@ -13,25 +13,32 @@ export const FeedStack = StackNavigator({
     screen: Feed,
     navigationOptions: {
       title: 'Feed',
-      // Uncomment to syle your navgation
-      // headerTitleStyle: {
-      //   color : '#ffffff'
-      // },
-      // headerStyle: {
-      //   backgroundColor: 'red',
-      //   elevation: null
-      // },
+      headerTitleStyle: {
+        color : '#ffffff'
+      },
+      headerStyle: {
+        backgroundColor: '#ffc67c',
+        elevation: null
+      },
     },
   },
   Details: {
     screen: UserDetail,
     navigationOptions: ({ navigation }) => ({
       title: `${navigation.state.params.name.first.toUpperCase()} ${navigation.state.params.name.last.toUpperCase()}`,
+      headerTitleStyle: {
+        color : '#ffffff'
+      },
+      headerStyle: {
+        backgroundColor: '#ffc67c',
+        elevation: null
+      },
     }),
   },
 });
 
 export const Tabs = TabNavigator({
+
   Feed: {
     screen: FeedStack,
     navigationOptions: {
@@ -45,7 +52,25 @@ export const Tabs = TabNavigator({
       tabBarLabel: 'Me',
       tabBarIcon: ({ tintColor }) => <Icon name="account-circle" size={35} color={tintColor} />
     },
-  },
+  }},{
+    tabBarPosition: 'bottom',
+    tabBarOptions : {
+      activeTintColor: '#ffffff',
+      inactiveTintColor: '#e3e5e8',
+      labelStyle: {
+        fontSize: 14,
+      },
+      headerTitleStyle: {
+        color : '#ffffff'
+      },
+      style: {
+        backgroundColor: '#f4a742',
+      },
+      tabStyle: {
+       justifyContent: 'center',
+       alignItems: 'center',
+     },
+    },
 });
 
 export const SettingsStack = StackNavigator({
@@ -53,6 +78,13 @@ export const SettingsStack = StackNavigator({
     screen: Settings,
     navigationOptions: {
       title: 'Settings',
+      headerTitleStyle: {
+        color : '#ffffff'
+      },
+      headerStyle: {
+        backgroundColor: '#ffc67c',
+        elevation: null
+      },
     },
   },
 });
@@ -62,6 +94,13 @@ export const SignInStack = StackNavigator({
     screen: SignIn,
     navigationOptions: {
       title: 'SignIn',
+      headerTitleStyle: {
+        color : '#ffffff'
+      },
+      headerStyle: {
+        backgroundColor: '#ffc67c',
+        elevation: null
+      },
     },
   },
 });
