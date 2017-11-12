@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Card, Button, FormLabel, FormInput } from 'react-native-elements';
-// import { onSignIn } from "../auth";
 
 class SignIn extends Component {
   onSignInPressed = () => {
