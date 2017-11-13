@@ -1,8 +1,8 @@
 # Allies-React-Native
 
-In this project I develop AlliesApp in React native
+In this project I develop AlliesApp with React native
 
-### Why we should use react native ? 
+### Why we should use React native ? 
 
 Do you want to 
 Create mobile application in short time ?
